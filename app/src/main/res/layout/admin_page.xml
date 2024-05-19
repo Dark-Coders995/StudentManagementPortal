@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+    <!-- Selection Spinner -->
+    <Spinner
+        android:id="@+id/spinner_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Teacher Details -->
+    <TextView
+        android:id="@+id/teacher_details_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teacher Details"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/teacher_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/teacher_department_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Department"
+        android:visibility="gone" />
+
+    <!-- Student Details -->
+    <TextView
+        android:id="@+id/student_details_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Details"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/student_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/student_course_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course"
+        android:visibility="gone" />
+
+    <!-- Other UI elements for additional details -->
+
+</LinearLayout>

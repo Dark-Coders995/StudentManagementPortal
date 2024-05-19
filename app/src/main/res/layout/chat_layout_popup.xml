@@ -1,0 +1,35 @@
+<!-- chat_popup_layout.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popupRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/popupMessageEditText"
+        android:paddingBottom="8dp"
+        android:background="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/popupMessageEditText"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_above="@+id/popupSendButton"
+        android:hint="Type your message"
+        android:inputType="textMultiLine"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:id="@+id/popupSendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Send"/>
+
+    <include layout="@layout/message_item"/>
+</RelativeLayout>

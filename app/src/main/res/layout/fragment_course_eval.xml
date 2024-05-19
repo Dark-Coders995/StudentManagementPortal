@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Course_eval">
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:visibility="visible"
+
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                style="@style/top"
+                android:layout_weight="2"
+                android:text="Subject"
+                android:id="@+id/lefttf"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/middletf"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                style="@style/top"
+                android:text="Total"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/righttf"
+                android:layout_weight="2"
+                android:layout_height="50dp"
+                style="@style/top"
+                android:text="Attendence"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:id="@+id/qr"
+                android:layout_weight="0"
+                android:layout_height="50dp"
+                style="@style/top"
+                android:src="@drawable/ic_baseline_qr_code_24"
+                android:scaleType="centerInside"/>
+
+        </TableRow>
+    </TableLayout>
+
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_baseline_qr_code_24"
+        android:contentDescription="scan QR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+        android:layout_margin="16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/qrdisplay"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
